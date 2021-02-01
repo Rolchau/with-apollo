@@ -17,7 +17,13 @@ export default function Header() {
           Client-Only
         </a>
       </Link>
-      <style jsx>{`
+      <Link href="/test">
+        <a className={pathname === '/test' ? 'is-active' : ''}>
+           Testing initialprops
+        </a>
+      </Link>
+
+    <style jsx>{`
         header {
           margin-bottom: 25px;
         }
