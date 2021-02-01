@@ -17,7 +17,7 @@ const TestPage = () => (
   </App>
 )
 
-TextPage.getInitialProps = async (ctx) => {
+TestPage.getInitialProps = async (ctx) => {
   const apolloClient = initializeApollo()
 
   await apolloClient.query({
